@@ -1,0 +1,37 @@
+.cf() {
+	zoom: 1;
+	&:before, &:after {
+		content: '';
+		display: table;
+	}
+	&:after {
+		clear: both;
+	}
+}
+
+.sprite(@l:0; @t: 0; @rp: no-repeat){
+	background:transparent url('@{path-images}/sprite.png') @rp @l @t;
+}
+
+.opacity(@opacity:1){
+	@opacityPercentage: @opacity * 100;
+	opacity: @opacity;
+	-webkit-opacity: @opacity;
+	-moz-opacity: @opacity;
+    -ms-filter: ~"progid:DXImageTransform.Microsoft.Alpha(opacity=(@{opacityPercentage}))"; 
+    filter: ~"alpha(opacity=(@{opacityPercentage}))";
+}
+
+.unstyled() {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.font1() {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.font2() {
+	font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
