@@ -1,338 +1,369 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Bitcoin Day</title>
-        <meta name="BitcoinDay" content="Events" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!--Bootstrap 4-->
-        <link rel="stylesheet" href="./css/bootstrap.min.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-        <!--icons-->
-        <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <!--vendors-->
-        <link rel="stylesheet" href="./js/vendors/daterangepicker/daterangepicker.css" />
-        <!--custom css-->
-        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-        <link rel="stylesheet" href="./css/components.css" />
-        <link rel="stylesheet" href="./css/colors.css" />
-        <link rel="stylesheet" href="./css/demo.css" />
-    </head>
-    <body>
 
-        <!--header-->
-        <nav class="navbar navbar-toggleable-md fixed-top navbar-transparent sticky-navigation-alt">
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="ion-grid"></span>
-            </button>
-            <div class="container">
-                <a class="navbar-brand" href="#">
-                    <img src="./img/logo_w.png" class="nav-brand-logo" />
-                </a>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link page-scroll" href="#events">Events</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link page-scroll" href="#speakers">Speakers</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link page-scroll" href="#sponsors">Sponsors</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link page-scroll" href="#joinus">Join Us</a>
-                        </li>
-                    </ul>
-                </div>
+<head>
+  <meta charset="utf-8">
+  <title>Bitcoin Day</title>
+  <meta name="BitcoinDay" content="Events" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Bootstrap 4-->
+  <link rel="stylesheet" href="./css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <!--icons-->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--vendors-->
+  <link rel="stylesheet" href="./js/vendors/daterangepicker/daterangepicker.css" />
+  <!--custom css-->
+  <link rel="stylesheet" href="./css/app.min.css" />
+</head>
+
+<body>
+
+  <!--header-->
+  <nav class="navbar-main navbar navbar-expand-md fixed-top navbar-transparent sticky-navigation-alt">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="./img/logo_w.png" class="nav-brand-logo" />
+      </a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="ion-grid"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link page-scroll" href="#events">Events</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link page-scroll" href="#speakers">Speakers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link page-scroll" href="#sponsors">Sponsors</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link page-scroll" href="#joinus">Join Us</a>
+          </li>
+          <li class="nav-item">
+            <ul>
+              <li>
+                <a href="index.html">EN</a>
+              </li>
+              <li>
+                <a href="es.html">ES</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="wrapper">
+
+    <!--header section-->
+    <section class="hero-header" id="home" style="background-image: url(./img/btc_eventmx.png)">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7 offset-md-5">
+            <div class="brand">
+              <p class="htxt1">
+                AUGUST 16
+              </p>
+              <h1 class="heading-light pt-5">Monterrey</h1>
+              <h2 class="htxt3">México</h2>
+
+              <a href="https://www.eventbrite.com.ar/e/bitcoinday-mx-ciudad-de-monterrey-tickets-47439261107?aff=eac2" class="btn btn-outline-white btn-md page-scroll">
+                <!-- <em class="ion-play"></em>  -->
+                TICKETS NOW!
+              </a>
             </div>
-        </nav>
-
-        <div class="wrapper">
-
-            <!--header section-->
-            <section class="hero-header" id="home" style="background-image: url(./img/btc_eventmx.png)">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-8 offset-md-5">
-                            <div class="brand">
-                               <p class="htxt1">
-                                    AUGUST 16
-                                </p>
-                                <h1 class="heading-light pt-5">Monterrey</h1>
-                                <h2 class="htxt3">México</h2>
-                                
-                                <a href="https://www.eventbrite.com.ar/e/bitcoinday-mx-ciudad-de-monterrey-tickets-47439261107?aff=eac2" class="btn btn-outline-white btn-md page-scroll">
-                                    <em class="ion-play"></em> TICKETS NOW!
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!--features-->
-            <section class="bg-alt" id="features">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-8 offset-md-2">
-                            <div class="title text-left">
-                                <h2 class="wbht">We believe <b>startups</b> are the <b>driving force</b> of change for Latin America & the <b>world.</b></h2>
-                                <p class="wbh1">
-                                    We are a group of tech entrepreneurs who use technology to be more
-efficient, and overcome imaginary barriers. We aim to move away from the existing information asymmetries and enhance the fairness and equity of the decentralized processes by leaving bureaucracy behind.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- <div class="row text-center mt-4">
-                        <div class="col-sm-4">
-                            <div class="card border-none">
-                                <div class="card-block">
-                                    <div class="mb-3">
-                                        <em class="ion-ios-checkmark-outline icon-lg text-primary"></em>
-                                    </div>
-                                    <h4>100% Secure</h4>
-                                    <p class="text-muted">
-                                        Explain each individual feature here in more detail - write at least 3-4
-                                        sentences. Do not talk about irrelevant stuff.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="card border-none">
-                                <div class="card-block">
-                                    <div class="mb-3">
-                                        <em class="ion-ios-infinite icon-lg text-success"></em>
-                                    </div>
-                                    <h4>Unlimited Accounts</h4>
-                                    <p class="text-muted">
-                                        Explain each individual feature here in more detail - write at least 3-4
-                                        sentences. Do not talk about irrelevant stuff.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="card border-none">
-                                <div class="card-block">
-                                    <div class="mb-3">
-                                        <em class="ion-ios-heart-outline icon-lg text-danger"></em>
-                                    </div>
-                                    <h4>Customer Support</h4>
-                                    <p class="text-muted">
-                                        Explain each individual feature here in more detail - write at least 3-4
-                                        sentences. Do not talk about irrelevant stuff.
-                                    </p>
-                                </div>
-                            </div>
-                        </div> -->
-                    </div>
-                </div>
-            </section>
-            <div class="container-fluid" id="events" style="background-color: #0066ff">
-                <div class="row">
-                    <div class="col-md-8 mx-auto pt-5 pb-5">
-                    <img src="./img/Asset 1.png" class="" alt="Responsive image">
-                    <div class="col-md-8 htxt1">Monterrey | Mexico</div>  
-                    </div>
-                </div>    
-            </div>
-            <!--team-->
-            <section class="bg-faded" id="speakers">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-8 offset-md-2">
-                            <div class="title text-center">
-                                <h2 class="heading-semi-bold text-primary">Speakers</h2>
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row text-center mt-4 pt-5">
-                        <div class="col-sm-3">
-                            <div class="mb-4">
-                                <img src="./img/btc_speaker01.png" class="mx-auto d-block rounded-circle img-fluid img-team" alt="Team" />
-                            </div>
-                            <h5>Diego Gutierrez Saldivar</h5>
-                            <p class="heading-semi-bold text-muted">CEO de RSK</p>
-                            <p>
-                                <a href="#" class="mr-3"><em class="fa fa-facebook"></em></a>
-                                <a href="#" class="mr-3"><em class="fa fa-twitter"></em></a>
-                                <a href="#"><em class="fa fa-instagram"></em></a>
-                            </p>
-                        </div>
-                        <div class="col-sm-3">
-                            <div class="mb-4">
-                                <img src="./img/btc_speaker02.png" class="mx-auto d-block rounded-circle img-fluid img-team" alt="Team" />
-                            </div>
-                            <h5>Manuel Beaudroit</h5>
-                            <p class="heading-semi-bold text-muted">Chief Marketing Officer en Bitex.la</p>
-                            <p>
-                                <a href="#" class="mr-3"><em class="fa fa-facebook"></em></a>
-                                <a href="#" class="mr-3"><em class="fa fa-twitter"></em></a>
-                                <a href="#"><em class="fa fa-instagram"></em></a>
-                            </p>
-                        </div>
-                        <div class="col-sm-3">
-                            <div class="mb-4">
-                                <img src="./img/btc_speaker03.png" class="mx-auto d-block rounded-circle img-fluid img-team" alt="Team" />
-                            </div>
-                            <h5>Rodolfo Andragnes</h5>
-                            <p class="heading-semi-bold text-muted">Fundador de la ONG Bitcoin Argentina</p>
-                           
-                            <p>
-                                <a href="#" class="mr-3"><em class="fa fa-facebook"></em></a>
-                                <a href="#" class="mr-3"><em class="fa fa-twitter"></em></a>
-                                <a href="#"><em class="fa fa-instagram"></em></a>
-                            </p>
-                        </div>
-                        <div class="col-sm-3">
-                            <div class="mb-4">
-                                <img src="./img/btc_speaker04.png" class="mx-auto d-block rounded-circle img-fluid img-team" alt="Team" />
-                            </div>
-                            <h5>Guillermo Torrealba</h5>
-                            <p class="heading-semi-bold text-muted">Fundador & CEO de Buda.com</p>
-                            
-                            <p>
-                                <a href="#" class="mr-3"><em class="fa fa-facebook"></em></a>
-                                <a href="#" class="mr-3"><em class="fa fa-twitter"></em></a>
-                                <a href="#"><em class="fa fa-instagram"></em></a>
-                            </p>
-                        </div>  
-                        <div class="col-sm-3 pt-5">
-                            <div class="mb-4">
-                                <img src="./img/btc_speaker05.png" class="mx-auto d-block rounded-circle img-fluid img-team" alt="Team" />
-                            </div>
-                            <h5>Juan Garavaglia</h5>
-                            <p class="heading-semi-bold text-muted">Founder Bitprim BCash core developer</p>
-                           
-                            <p>
-                                <a href="#" class="mr-3"><em class="fa fa-facebook"></em></a>
-                                <a href="#" class="mr-3"><em class="fa fa-twitter"></em></a>
-                                <a href="#"><em class="fa fa-instagram"></em></a>
-                            </p>
-                        </div>
-                        <div class="col-sm-3 pt-5">
-                            <div class="mb-4">
-                                <img src="./img/btc_speaker06.png" class="mx-auto d-block rounded-circle img-fluid img-team" alt="Team" />
-                            </div>
-                            <h5>Carlos Maslaton</h5>
-                            <p class="heading-semi-bold text-muted">Head of Xapo Treasury</p>
-                            
-                            <p>
-                                <a href="#" class="mr-3"><em class="fa fa-facebook"></em></a>
-                                <a href="#" class="mr-3"><em class="fa fa-twitter"></em></a>
-                                <a href="#"><em class="fa fa-instagram"></em></a>
-                            </p>
-                        </div>
-                        <div class="col-sm-3 pt-5">
-                            <div class="mb-4">
-                                <img src="./img/btc_speaker07.png" class="mx-auto d-block rounded-circle img-fluid img-team" alt="Team" />
-                            </div>
-                            <h5>Gonzalo Blusson</h5>
-                            <p class="heading-semi-bold text-muted">CEO de Signatura</p>
-                            
-                            <p>
-                                <a href="#" class="mr-3"><em class="fa fa-facebook"></em></a>
-                                <a href="#" class="mr-3"><em class="fa fa-twitter"></em></a>
-                                <a href="#"><em class="fa fa-instagram"></em></a>
-                            </p>
-                        </div>
-                        <div class="col-sm-3 pt-5">
-                            <div class="mb-4">
-                                <img src="./img/btc_speaker08.png" class="mx-auto d-block rounded-circle img-fluid img-team" alt="Team" />
-                            </div>
-                            <h5>Joaquin Moreno</h5>
-                            <p class="heading-semi-bold text-muted">Business Development at Consensys</p>
-                            
-                            <p>
-                                <a href="#" class="mr-3"><em class="fa fa-facebook"></em></a>
-                                <a href="#" class="mr-3"><em class="fa fa-twitter"></em></a>
-                                <a href="#"><em class="fa fa-instagram"></em></a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="bg-alt" id="sponsors">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-8 offset-md-2">
-                            <div class="title text-center">
-                                <h2 class="heading-semi-bold text-primary">Sponsors</h2>
-                                <div class="row">
-                                    <div class="mx-auto">
-                                    <img src="./img/sponsors_main.png">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-            </section>
-            <!--team-->
-            <section class="bg-alt" id="contact">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-8 offset-md-2">
-                            <div class="title text-center">
-                                <h2 class="heading-semi-bold text-primary">Contact Us</h2>
-                                <p class="lead text-muted">
-                                    W'd love to hear from you!
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row text-center mt-4">
-                        <div class="col-md-8 offset-md-2">
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Your Name" />
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Your Email Adress" />
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group mt-4">
-                                <textarea class="form-control" placeholder="What's in your mind?" rows="5"></textarea>
-                            </div>
-                            <div class="form-group mt-4">
-                                <input type="submit" class="btn btn-primary" value="Send Message" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!--footer-->
-            <section class="colored-section bg-inverse footer pt-5">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-6 offset-sm-3 text-center">
-                                &copy; 2018 BitcoinDay   
-                        </div>
-                    </div>
-                </div>
-            </section>
+          </div>
         </div>
+      </div>
+    </section>
 
-        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
-        <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
-        <!--vendors-->
-        <script src="./js/vendors/moment.min.js"></script>
-        <script src="./js/vendors/daterangepicker/daterangepicker.js"></script>
-        <!--custom js-->
-        <script src="./js/app.js"></script>
-    </body>
+    <!--features-->
+    <section class="bg-alt" id="features">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 offset-md-2">
+            <div class="title text-left">
+              <h2 class="wbht">We believe
+                <b>startups</b> are the
+                <b>driving force</b> of change for Latin America & the
+                <b>world.</b>
+              </h2>
+              <p class="wbh1">
+                We are a group of tech entrepreneurs who use technology to be more efficient, and overcome imaginary barriers. We aim to
+                move away from the existing information asymmetries and enhance the fairness and equity of the decentralized
+                processes by leaving bureaucracy behind.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  </section>
+  <div class="container-fluid" id="events" style="background-color: #0066ff">
+    <div class="row">
+      <div class="col-md-8 mx-auto pt-5 pb-5">
+        <img src="./img/Asset 1.png" class="" alt="Responsive image">
+        <div class="col-md-8 htxt1">Monterrey | Mexico</div>
+      </div>
+    </div>
+  </div>
+  <!--team-->
+  <section class="bg-faded" id="speakers">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 offset-md-2">
+          <div class="title text-center">
+            <h2 class="heading-semi-bold text-primary">Speakers</h2>
+
+          </div>
+        </div>
+      </div>
+      <div class="row text-center mt-4 pt-5">
+        <div class="col-sm-3">
+          <div class="mb-4">
+            <img src="./img/btc_speaker01.png" class="mx-auto d-block rounded-circle img-fluid img-team" alt="Team" />
+          </div>
+          <h5>Diego Gutierrez Saldivar</h5>
+          <p class="heading-semi-bold text-muted">CEO de RSK</p>
+          <p>
+            <a href="#" class="mr-3">
+              <em class="fa fa-facebook"></em>
+            </a>
+            <a href="#" class="mr-3">
+              <em class="fa fa-twitter"></em>
+            </a>
+            <a href="#">
+              <em class="fa fa-instagram"></em>
+            </a>
+          </p>
+        </div>
+        <div class="col-sm-3">
+          <div class="mb-4">
+            <img src="./img/btc_speaker02.png" class="mx-auto d-block rounded-circle img-fluid img-team" alt="Team" />
+          </div>
+          <h5>Manuel Beaudroit</h5>
+          <p class="heading-semi-bold text-muted">Chief Marketing Officer en Bitex.la</p>
+          <p>
+            <a href="#" class="mr-3">
+              <em class="fa fa-facebook"></em>
+            </a>
+            <a href="#" class="mr-3">
+              <em class="fa fa-twitter"></em>
+            </a>
+            <a href="#">
+              <em class="fa fa-instagram"></em>
+            </a>
+          </p>
+        </div>
+        <div class="col-sm-3">
+          <div class="mb-4">
+            <img src="./img/btc_speaker03.png" class="mx-auto d-block rounded-circle img-fluid img-team" alt="Team" />
+          </div>
+          <h5>Rodolfo Andragnes</h5>
+          <p class="heading-semi-bold text-muted">Fundador de la ONG Bitcoin Argentina</p>
+
+          <p>
+            <a href="#" class="mr-3">
+              <em class="fa fa-facebook"></em>
+            </a>
+            <a href="#" class="mr-3">
+              <em class="fa fa-twitter"></em>
+            </a>
+            <a href="#">
+              <em class="fa fa-instagram"></em>
+            </a>
+          </p>
+        </div>
+        <div class="col-sm-3">
+          <div class="mb-4">
+            <img src="./img/btc_speaker04.png" class="mx-auto d-block rounded-circle img-fluid img-team" alt="Team" />
+          </div>
+          <h5>Guillermo Torrealba</h5>
+          <p class="heading-semi-bold text-muted">Fundador & CEO de Buda.com</p>
+
+          <p>
+            <a href="#" class="mr-3">
+              <em class="fa fa-facebook"></em>
+            </a>
+            <a href="#" class="mr-3">
+              <em class="fa fa-twitter"></em>
+            </a>
+            <a href="#">
+              <em class="fa fa-instagram"></em>
+            </a>
+          </p>
+        </div>
+        <div class="col-sm-3 pt-5">
+          <div class="mb-4">
+            <img src="./img/btc_speaker05.png" class="mx-auto d-block rounded-circle img-fluid img-team" alt="Team" />
+          </div>
+          <h5>Juan Garavaglia</h5>
+          <p class="heading-semi-bold text-muted">Founder Bitprim BCash core developer</p>
+
+          <p>
+            <a href="#" class="mr-3">
+              <em class="fa fa-facebook"></em>
+            </a>
+            <a href="#" class="mr-3">
+              <em class="fa fa-twitter"></em>
+            </a>
+            <a href="#">
+              <em class="fa fa-instagram"></em>
+            </a>
+          </p>
+        </div>
+        <div class="col-sm-3 pt-5">
+          <div class="mb-4">
+            <img src="./img/btc_speaker06.png" class="mx-auto d-block rounded-circle img-fluid img-team" alt="Team" />
+          </div>
+          <h5>Carlos Maslaton</h5>
+          <p class="heading-semi-bold text-muted">Head of Xapo Treasury</p>
+
+          <p>
+            <a href="#" class="mr-3">
+              <em class="fa fa-facebook"></em>
+            </a>
+            <a href="#" class="mr-3">
+              <em class="fa fa-twitter"></em>
+            </a>
+            <a href="#">
+              <em class="fa fa-instagram"></em>
+            </a>
+          </p>
+        </div>
+        <div class="col-sm-3 pt-5">
+          <div class="mb-4">
+            <img src="./img/btc_speaker07.png" class="mx-auto d-block rounded-circle img-fluid img-team" alt="Team" />
+          </div>
+          <h5>Gonzalo Blusson</h5>
+          <p class="heading-semi-bold text-muted">CEO de Signatura</p>
+
+          <p>
+            <a href="#" class="mr-3">
+              <em class="fa fa-facebook"></em>
+            </a>
+            <a href="#" class="mr-3">
+              <em class="fa fa-twitter"></em>
+            </a>
+            <a href="#">
+              <em class="fa fa-instagram"></em>
+            </a>
+          </p>
+        </div>
+        <div class="col-sm-3 pt-5">
+          <div class="mb-4">
+            <img src="./img/btc_speaker08.png" class="mx-auto d-block rounded-circle img-fluid img-team" alt="Team" />
+          </div>
+          <h5>Joaquin Moreno</h5>
+          <p class="heading-semi-bold text-muted">Business Development at Consensys</p>
+
+          <p>
+            <a href="#" class="mr-3">
+              <em class="fa fa-facebook"></em>
+            </a>
+            <a href="#" class="mr-3">
+              <em class="fa fa-twitter"></em>
+            </a>
+            <a href="#">
+              <em class="fa fa-instagram"></em>
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="bg-alt" id="sponsors">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 offset-md-1">
+          <div class="title text-center">
+            <h2 class="heading-semi-bold text-primary">Sponsors</h2>
+            <div class="row">
+              <div class="mx-auto">
+                <img src="./img/sponsors_main.png">
+              </div>
+              <div class="mx-auto">
+                <img src="./img/sponsors_seccondary.png">
+              </div>
+              <div class="mx-auto">
+                <img src="./img/sponsors_mediapartners01.png">
+              </div>
+              <div class="mx-auto">
+                <img src="./img/sponsors_mediapartners02.png">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <!--team-->
+  <section class="bg-alt" id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 offset-md-2">
+          <div class="title text-center">
+            <h2 class="heading-semi-bold text-primary">Contact Us</h2>
+            <p class="lead text-muted">
+              W'd love to hear from you!
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row text-center mt-4">
+        <div class="col-md-8 offset-md-2">
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Your Name" />
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Your Email Adress" />
+              </div>
+            </div>
+          </div>
+          <div class="form-group mt-4">
+            <textarea class="form-control" placeholder="What's in your mind?" rows="5"></textarea>
+          </div>
+          <div class="form-group mt-4">
+            <input type="submit" class="btn btn-primary" value="Send Message" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--footer-->
+  <section class="colored-section bg-inverse footer pt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 offset-sm-3 text-center">
+          &copy; 2018 BitcoinDay
+        </div>
+      </div>
+    </div>
+  </section>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+  <!--vendors-->
+  <script src="./js/vendors/moment.min.js"></script>
+  <script src="./js/vendors/daterangepicker/daterangepicker.js"></script>
+  <!--custom js-->
+  <script src="./js/app.js"></script>
+</body>
+
 </html>
