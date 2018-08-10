@@ -5,40 +5,74 @@
     Created on : Jul 22, 2017, 12:38:02 PM
     Author     : Atta-Ur-Rehman Shah (http://attacomsian.com)
 */
-.btn-twitter, .btn-facebook, .btn-google, .btn-linkedin, .btn-github{
-    margin-right: 10px;
-    font-size: 19px;
+.btn-twitter,
+.btn-facebook,
+.btn-google,
+.btn-linkedin,
+.btn-github {
+  margin-right: 10px;
+  font-size: 19px;
 }
-.btn-twitter, .btn-twitter:hover{
-    color:#00aced;
+.btn-twitter,
+.btn-twitter:hover {
+  color: #00aced;
 }
-.btn-facebook, .btn-facebook:hover{
-    color: #3b5998;
+.btn-facebook,
+.btn-facebook:hover {
+  color: #3b5998;
 }
-.btn-google, .btn-google:hover{
-    color: #dd4b39;
+.btn-google,
+.btn-google:hover {
+  color: #dd4b39;
 }
-.btn-linkedin, .btn-linkedin:hover{
-    color: #007bb6;
+.btn-linkedin,
+.btn-linkedin:hover {
+  color: #007bb6;
 }
-.btn-github, .btn-github:hover{
-    color: #000000;
+.btn-github,
+.btn-github:hover {
+  color: #000000;
 }
-.demo-section.hero-header{
-    height: 80vh;
-    background-image: url(../img/bg1.jpg);
+.demo-section.hero-header {
+  height: 80vh;
+  background-image: url(../img/bg1.jpg);
 }
-.demo-section .brand{
-    margin-top: 20vh;
+.demo-section .brand {
+  margin-top: 20vh;
 }
-.img-team{
-    max-width: 150px;
+.img-team {
+  max-width: 150px;
 }
 .btn-outline-white {
   font-family: 'TitlinGothicFBBold';
-  font-size: 20px;
+  font-size: 1.3em;
   letter-spacing: 3px;
   padding: 0.95rem 1.2rem 0.75rem;
   border-radius: 0;
   border-color: #fff;
+}
+@media (max-width: 768px) {
+  .btn-outline-white {
+    font-size: 1em;
+  }
+}
+.sponsors-item {
+  padding: 20px 0 40px;
+  & + .sponsors-item {
+    border-top: 1px solid #ddd;
+  }
+}
+.footer {
+  padding: 40px 0;
+  background-color: #06c;
+
+  .footer-logo {
+    width: 140px;
+  }
+}
+
+.error-message {
+  color: #d00;
+  padding: 5px 0 0;
+  font-size: 13px;
 }
