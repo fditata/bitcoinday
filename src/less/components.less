@@ -134,6 +134,12 @@ h6,
   line-height: 28px;
   padding-bottom: 1.2em;
 }
+@media (max-width: 768px) {
+  .htxt3 {
+    font-size: 3.2em;
+    letter-spacing: 3px;
+  }
+}
 
 .htxt1 {
   font-family: 'TitlinGothicFBBold';
@@ -182,7 +188,7 @@ h6,
 }
 .brand h1 {
   font-size: 6.8em;
-  font-weight: 800;
+  // font-weight: 800;
 }
 @media (max-width: 768px) {
   .brand {
@@ -215,16 +221,24 @@ section {
 * Navigation
 ----------------------------------------------*/
 .navbar {
+  align-items: flex-start;
   min-height: 70px;
   background-color: #06f;
 }
 .navbar-brand {
+  vertical-align: top;
   padding-top: 0px;
   padding-bottom: 0px;
 }
 .nav-brand-logo {
   width: 280px;
 }
+@media (max-width: 768px) {
+  .nav-brand-logo {
+    width: 220px;
+  }
+}
+
 .icon-togger {
   width: 24px;
   color: #fff;
@@ -281,8 +295,8 @@ section {
 }
 @media (max-width: 992px) {
   .navbar.navbar-transparent {
-    background-color: rgba(0, 0, 0, 0.4);
-    padding-top: 10px;
+    // background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 8px;
     border-radius: 0;
   }
 }
