@@ -149,6 +149,14 @@ h6,
   color: #f7f7f7;
 }
 
+.htxt2 {
+  font-family: 'TitlinGothicFBBold';
+  font-size: 1em;
+  letter-spacing: 5px;
+  text-align: right;
+  color: #f7f7f7;
+}
+
 .wbht {
   font-family: 'TitlinGothicFBLight';
   font-size: 3.1em;
@@ -190,6 +198,88 @@ h6,
   font-size: 6.8em;
   // font-weight: 800;
 }
+.program-list{
+  list-style: none;
+  padding: 0;
+  margin-top: 64px;
+  .row{
+    display: table-row;
+    letter-spacing: 0.06rem;
+    .time-box{
+      position: relative;
+      float: left;
+      min-height: 80px;
+      height: auto;
+      width: 100px;
+      .dot {
+        width: 6px;
+        height: 6px;
+        overflow: hidden;
+        background-color: rgba(68, 68, 68, 0.74);;
+        border-radius: 3px;
+        right: -4px;
+        top: 5px;
+        position: absolute;
+        box-shadow: 1px 0 0px 8px #f7f7f7;
+      }
+    }
+    .text-box{
+      float: left;
+      min-height: 80px;
+      padding: 0 0 2em 2em;
+      width: calc(~"100% - 100px");
+      border-left: 1px solid rgba(68, 68, 68, 0.24);;
+      .img-box {
+        width: 56px;
+        float: left;
+        margin-top: -16px;
+        margin-right: 20px;
+      }
+      .content-box {
+        float: left;
+        width: calc(~"100% - 76px");
+        .program-title{
+          margin: 0 0 8px 0;
+          font-family: 'TitlinGothicFBNorBold', sans-serif !important;
+          font-size: 1.25rem;
+          line-height: 115%;
+          letter-spacing: 0;
+          color: #000200;
+        }
+        .foroum{
+          opacity: .7;
+          font-size: .85rem;
+        }
+        .subtitle{
+          font-family: 'TitlinGothicFBNorBold', sans-serif !important;
+          line-height: 115%;
+          letter-spacing: 0;
+          font-size: 1.1rem;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .program-list{
+    .row{
+      .time-box{
+        width: 86px;
+      }
+      .text-box{
+        width: calc(~"100% - 86px");
+        .img-box {
+          display: none;
+          visibility: hidden;
+        }
+        .content-box {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 768px) {
   .brand {
     margin-top: 20vh;
@@ -252,7 +342,13 @@ section {
   font-family: 'TitlinGothicFBLight';
   font-weight: normal;
 }
-
+.navbar-nav .active .nav-link {
+  margin-right: .5rem;
+  margin-left: .5rem;
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+  border-bottom: 1px solid;
+}
 .navbar-nav .nav-item {
   ul {
     display: inline-block;

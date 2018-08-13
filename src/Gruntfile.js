@@ -3,7 +3,7 @@
  * @marcos0x
  */
 
-var pathRoot = '/Users/marcos/Projects/bitcoinday/webroot';
+var pathRoot = '../';
 var serveStatic = require('serve-static');
 var serveIndex = require('serve-index');
 var lrSnippet = require('grunt-contrib-livereload/lib/utils').livereloadSnippet;
