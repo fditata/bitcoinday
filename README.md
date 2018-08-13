@@ -1,3 +1,3 @@
-# Bitcoin Day 
+# Bitcoin Day
 
 Landing Page BitcoinDay
