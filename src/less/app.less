@@ -5,6 +5,9 @@
     Created on : Jul 22, 2017, 12:38:02 PM
     Author     : Atta-Ur-Rehman Shah (http://attacomsian.com)
 */
+a{
+  color: #0365ff;
+}
 .btn-twitter,
 .btn-facebook,
 .btn-google,
@@ -36,6 +39,8 @@
 .demo-section.hero-header {
   height: 80vh;
   background-image: url(../img/bg1.jpg);
+  background-position: center top;
+  background-attachment: fixed;
 }
 .demo-section .brand {
   margin-top: 20vh;
@@ -51,9 +56,84 @@
   border-radius: 0;
   border-color: #fff;
 }
+
+.btn-invisible-white {
+  font-family: 'TitlinGothicFBLight';
+  font-size: 1.3em;
+  letter-spacing: .1em;
+  text-transform: none;
+  margin: 0 1.5rem;
+  padding: .95rem 1.2rem .75rem;
+  border: 1px solid transparent;
+  border-radius: 0;
+  color: rgba(255, 255, 255, .8);
+  &:hover{
+    color:rgba(255, 255, 255, 1);
+    border: 1px solid rgba(255, 255, 255, .24);
+    background-color: rgba(255, 255, 255, .14);
+  }
+  &:active,
+  &:focus{
+    color:rgba(255, 255, 255, 1);
+    border: 1px solid rgba(255, 255, 255, 1);
+    background-color: rgba(255, 255, 255, .24);
+  }
+}
+.inline-btn-r{
+  display: block;
+  float: right;
+}
+
+.min-header {
+  height: 45vh;
+  background-image: url(../img/bg1.jpg);
+  background-position: center top;
+  background-attachment: fixed;
+  .brand{
+    margin-top: 6vh;
+    h1{
+      font-size: 4em;
+      line-height: 100%;
+      margin: 0;
+    }
+    h2{
+      font-size: 4em;
+      line-height: 100%;
+      margin: 0;
+      padding-bottom: 0.5em;
+    }
+    .btn-outline-white{
+      font-size: .85rem;
+    }
+  }
+}
+
+.icon-profile{
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  padding: 5px;
+  border: 1px solid transparent;
+  border-radius: 24px;
+  font-size: 1.2rem;
+  color: #0365ff;
+  background-color: transparent;
+  &:hover{
+    color: #ffffff;
+    background-color: #0365ff;
+  }
+}
+
+.uppercase{
+  text-transform: uppercase;
+  letter-spacing: 0.09rem;
+}
+
 @media (max-width: 768px) {
-  .btn-outline-white {
+  .btn-outline-white,
+  .btn-invisible-white {
     font-size: 1em;
+    margin: .5rem 0;
   }
 }
 .sponsors-item {
