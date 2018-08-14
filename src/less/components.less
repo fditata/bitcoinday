@@ -232,12 +232,21 @@ h6,
     }
     .link-tickets {
       font-size: .8rem;
-      display: block;
+      display: -webkit-inline-box;
       color: #e0bf6e;
+      border-bottom: 1px solid transparent;
       text-transform: uppercase;
       letter-spacing: .1rem;
-      padding: 0.3rem 0;
-      height: 1.3rem;
+      margin: 5px 0 0 0;
+      height: 1.6rem;
+      &:hover{
+        border-bottom: 1px solid #e0bf6e;
+      }
+      &:active,
+      &:focus{
+        color: #fff;
+        border-bottom: 1px solid #fff;
+      }
     }
   }
   .past-item{
@@ -265,16 +274,22 @@ h6,
       color: #fff;
       font-size: 1.3rem;
       letter-spacing: .05rem;
-      margin: 5px 0 0 0;
+      margin: 5px 0 5px 0;
     }
     .link-tickets {
       font-size: .8rem;
-      display: block;
+      display: -webkit-inline-box;
       color: rgba(255, 255, 255, .54);
       text-transform: uppercase;
       letter-spacing: .1rem;
-      padding: 0.3rem 0;
-      height: 1.3rem;
+      margin: 5px 0 0 0;
+      height: 1.6rem;
+      &:hover,
+      &:active,
+      &:focus{
+        color: #fff;
+        border-bottom: 1px solid #fff;
+      }
     }
   }
 }
