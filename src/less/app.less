@@ -8,6 +8,11 @@
 a{
   color: #0365ff;
 }
+
+.btn-md{
+  padding: .75rem 3rem;
+}
+
 .btn-twitter,
 .btn-facebook,
 .btn-google,
@@ -58,14 +63,40 @@ a{
   color: #0166ff;
   background-color: transparent;
   &:hover{
+    border: 1px solid #0166ff;
     color: #fff;
     background-color: #0166ff;
+    box-shadow: none;
   }
   &:active,
   &:focus{
     border: 1px solid #0166ff;
     color: #0166ff;
     background-color: transparent;
+    box-shadow: none;
+  }
+}
+
+.btn-outline-grey{
+  border: 1px solid #434444;
+  border-radius: 0;
+  box-shadow: none;
+  font-family: TitlinGothicFBBold;
+  letter-spacing: 0.1rem;
+  color: #434444;
+  background-color: transparent;
+  &:hover{
+    border: 1px solid #0166ff;
+    color: #fff;
+    background-color: #0166ff;
+    box-shadow: none;
+  }
+  &:active,
+  &:focus{
+    border: 1px solid #0166ff;
+    color: #0166ff;
+    background-color: transparent;
+    box-shadow: none;
   }
 }
 
@@ -166,12 +197,16 @@ a{
   }
 }
 .footer {
+  border-top: 1px solid #ddd;
   padding: 40px 0;
-  background-color: #0166ff;
+  background-color: #f7f7f7;
 
   .footer-logo {
     width: 140px;
     margin: 7px 8px;
+    filter: invert(100%);
+    opacity: .7;
+    transition: all .25s ease-in-out;
   }
   .icon-footer{
     width: 36px;
@@ -183,9 +218,15 @@ a{
     margin: 0 8px;
     font-size: 1.2rem;
     background-color: transparent;
+    color: #434444 !important;
     &:hover{
-      background-color: rgba(0, 0, 0, 0.14)!important;
-      color: #ffffff!important;
+      background-color: transparent;
+      color: #0365ff!important;
+    }
+    &:focus,
+    &:active{
+      background-color: rgba(255, 255, 255, .8);
+      color: #0365ff!important;
     }
   }
 }

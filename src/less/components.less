@@ -53,7 +53,7 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: 'Hind';
+  font-family: 'TitlinGothicFB';
 }
 .h1,
 .h2,
@@ -215,12 +215,12 @@ h6,
         width: 6px;
         height: 6px;
         overflow: hidden;
-        background-color: rgba(68, 68, 68, 0.74);;
+        background-color: #929292;
         border-radius: 3px;
         right: -4px;
         top: 5px;
         position: absolute;
-        box-shadow: 1px 0 0px 8px #f7f7f7;
+        box-shadow: 0px 0 0 8px #fff;
       }
     }
     .text-box{
@@ -442,13 +442,18 @@ section {
 ----------------------------------------------*/
 .form-control {
   font-size: 15px;
-  padding: 0.65rem 0.75rem;
+  padding: 0.65rem 0;
+  border: none;
+  border-bottom: 1px solid;
+  border-radius: 0;
+  box-shadow: none;
   transition: background 0s ease-out;
 }
 .form-control:focus {
   outline: none;
   box-shadow: none;
   transition-duration: 0.3s;
+  border-color: #0365ff !important;
 }
 .form-control-lg {
   padding: 0.85rem 0.85rem;
