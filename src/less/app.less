@@ -48,7 +48,29 @@ a{
 .img-team {
   max-width: 150px;
 }
+
+.btn-outline-blue{
+  border: 1px solid #0166ff;
+  border-radius: 0;
+  box-shadow: none;
+  font-family: TitlinGothicFBBold;
+  letter-spacing: 0.1rem;
+  color: #0166ff;
+  background-color: transparent;
+  &:hover{
+    color: #fff;
+    background-color: #0166ff;
+  }
+  &:active,
+  &:focus{
+    border: 1px solid #0166ff;
+    color: #0166ff;
+    background-color: transparent;
+  }
+}
+
 .btn-outline-white {
+  height: 58px;
   font-family: 'TitlinGothicFBBold';
   font-size: 1.3em;
   letter-spacing: 3px;
@@ -58,6 +80,7 @@ a{
 }
 
 .btn-invisible-white {
+  height: 58px;
   font-family: 'TitlinGothicFBLight';
   font-size: 1.3em;
   letter-spacing: .1em;
@@ -87,8 +110,7 @@ a{
 .min-header {
   height: 45vh;
   background-image: url(../img/bg1.jpg);
-  background-position: center top;
-  background-attachment: fixed;
+  background-position: center;
   .brand{
     margin-top: 6vh;
     h1{
@@ -134,6 +156,7 @@ a{
   .btn-invisible-white {
     font-size: 1em;
     margin: .5rem 0;
+    padding: 1.2rem 1.2rem .75rem;
   }
 }
 .sponsors-item {
@@ -144,10 +167,26 @@ a{
 }
 .footer {
   padding: 40px 0;
-  background-color: #06c;
+  background-color: #0166ff;
 
   .footer-logo {
     width: 140px;
+    margin: 7px 8px;
+  }
+  .icon-footer{
+    width: 36px;
+    height: 36px;
+    border: none !important;
+    border-radius: 18px;
+    padding: 5px;
+    text-align: center;
+    margin: 0 8px;
+    font-size: 1.2rem;
+    background-color: transparent;
+    &:hover{
+      background-color: rgba(0, 0, 0, 0.14)!important;
+      color: #ffffff!important;
+    }
   }
 }
 
