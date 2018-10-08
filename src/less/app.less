@@ -8,6 +8,11 @@
 a{
   color: #0365ff;
 }
+
+.btn-md{
+  padding: .75rem 3rem;
+}
+
 .btn-twitter,
 .btn-facebook,
 .btn-google,
@@ -48,7 +53,55 @@ a{
 .img-team {
   max-width: 150px;
 }
+
+.btn-outline-blue{
+  border: 1px solid #0166ff;
+  border-radius: 0;
+  box-shadow: none;
+  font-family: TitlinGothicFBBold;
+  letter-spacing: 0.1rem;
+  color: #0166ff;
+  background-color: transparent;
+  &:hover{
+    border: 1px solid #0166ff;
+    color: #fff;
+    background-color: #0166ff;
+    box-shadow: none;
+  }
+  &:active,
+  &:focus{
+    border: 1px solid #0166ff;
+    color: #0166ff;
+    background-color: transparent;
+    box-shadow: none;
+  }
+}
+
+.btn-outline-grey{
+  border: 1px solid #434444;
+  border-radius: 0;
+  box-shadow: none;
+  font-family: TitlinGothicFBBold;
+  letter-spacing: 0.1rem;
+  color: #434444;
+  background-color: transparent;
+  &:hover{
+    border: 1px solid #0166ff;
+    color: #fff;
+    background-color: #0166ff;
+    box-shadow: none;
+  }
+  &:active,
+  &:focus{
+    border: 1px solid #0166ff;
+    color: #0166ff;
+    background-color: transparent;
+    box-shadow: none;
+  }
+}
+
 .btn-outline-white {
+  height: 58px;
   font-family: 'TitlinGothicFBBold';
   font-size: 1.3em;
   letter-spacing: 3px;
@@ -58,6 +111,7 @@ a{
 }
 
 .btn-invisible-white {
+  height: 58px;
   font-family: 'TitlinGothicFBLight';
   font-size: 1.3em;
   letter-spacing: .1em;
@@ -87,8 +141,7 @@ a{
 .min-header {
   height: 45vh;
   background-image: url(../img/bg1.jpg);
-  background-position: center top;
-  background-attachment: fixed;
+  background-position: center;
   .brand{
     margin-top: 6vh;
     h1{
@@ -134,6 +187,7 @@ a{
   .btn-invisible-white {
     font-size: 1em;
     margin: .5rem 0;
+    padding: 1.2rem 1.2rem .75rem;
   }
 }
 .sponsors-item {
@@ -143,11 +197,37 @@ a{
   }
 }
 .footer {
+  border-top: 1px solid #ddd;
   padding: 40px 0;
-  background-color: #06c;
+  background-color: #f7f7f7;
 
   .footer-logo {
     width: 140px;
+    margin: 7px 8px;
+    filter: invert(100%);
+    opacity: .7;
+    transition: all .25s ease-in-out;
+  }
+  .icon-footer{
+    width: 36px;
+    height: 36px;
+    border: none !important;
+    border-radius: 18px;
+    padding: 5px;
+    text-align: center;
+    margin: 0 8px;
+    font-size: 1.2rem;
+    background-color: transparent;
+    color: #434444 !important;
+    &:hover{
+      background-color: transparent;
+      color: #0365ff!important;
+    }
+    &:focus,
+    &:active{
+      background-color: rgba(255, 255, 255, .8);
+      color: #0365ff!important;
+    }
   }
 }
 

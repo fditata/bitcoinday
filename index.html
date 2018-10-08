@@ -11,8 +11,8 @@
   <meta property="og:url" content="https://bitcoinday.tv" />
   <meta property="og:image" content="https://bitcoinday.tv/img/favicon.jpg" />
 
-  <link rel="shortcut icon" type="image/jpg" src="img/favicon.jpg"/>
-  <link rel="shortcut icon" type="image/jpg" href="https://bitcoinday.tv/img/favicon.jpg"/>  
+  <link rel="shortcut icon" type="image/jpg" src="img/favicon.png"/>
+  <link rel="shortcut icon" type="image/jpg" href="https://bitcoinday.tv/img/favicon.png"/>  
   <!--Bootstrap 4-->
   <link rel="stylesheet" href="./css/bootstrap.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
@@ -84,11 +84,13 @@
               <h1 class="heading-light pt-5">Monterrey</h1>
               <h2 class="htxt3">México</h2>
 
-              <a href="schedule.html" class="btn btn-invisible-white inline-btn-r">Agenda</a>
-              <a href="https://www.eventbrite.com.ar/e/bitcoinday-mx-ciudad-de-monterrey-tickets-47439261107?aff=eac2" class="btn btn-outline-white btn-md page-scroll">
-                <!-- <em class="ion-play"></em>  -->
-                TICKETS NOW!
-              </a>
+              <div class="d-flex justify-content-end">
+                  <a href="schedule.html" class="btn btn-invisible-white inline-btn-r">Agenda</a>
+                  <a href="https://www.eventbrite.com.ar/e/bitcoinday-mx-ciudad-de-monterrey-tickets-47439261107?aff=eac2" target="_blank" class="btn btn-outline-white btn-md page-scroll">
+                    <!-- <em class="ion-play"></em>  -->
+                    TICKETS NOW!
+                  </a>
+              </div>
             </div>
           </div>
         </div>
@@ -117,14 +119,49 @@
       </div>
   </div>
   </section>
-  <div class="container-fluid" id="events" style="background-color: #0066ff">
-    <div class="row">
-      <div class="col-md-8 mx-auto pt-5 pb-5">
-        <img src="./img/Asset 1.png" class="" alt="Responsive image">
-        <div class="col-md-8 htxt1">Monterrey | Mexico</div>
-      </div>
-    </div>
-  </div>
+  <section id="events" style="background-color: #0066ff">
+      <div class="container" >
+          <div class="row pt-5">
+            <div class="col-md-6 mx-auto pb-5">
+              <img src="./img/Asset 1.png" class="" alt="Responsive image">
+            </div>
+            <div class="col-md-6 pt-5 pb-5 pl-md-5">
+              <div>
+                <h4 style="color: #fff">Upcoming</h4>
+                <ul class="event-list">
+                  <li class="upcomming-item">
+                    <div class="dot"></div>
+                    <p class="date">August 16</p>
+                    <h5 class="location">Monterrey, Mx.</h5>
+                    <a href="https://www.eventbrite.com.ar/e/bitcoinday-mx-ciudad-de-monterrey-tickets-47439261107?aff=eac2" target="_blank" class="link-tickets">Tickets</a></p>
+                </li>
+                </ul>
+                <h4 style="color: #fff">Past</h4>
+                <ul class="event-list">
+                    <li class="past-item">
+                      <div class="dot"></div>
+                      <p class="date">April 2018</p>
+                      <h5 class="location">Buenos Aires, Arg.</h5>
+                      <a href="https://www.facebook.com/pg/bitcoindayLA/photos/?tab=album&album_id=751369148387738" target="_blank" class="link-tickets">Gallery</a></p>
+                    </li>
+                    <li class="past-item">
+                        <div class="dot"></div>
+                        <p class="date">August 2017</p>
+                        <h5 class="location">Santiago, Chi.</h5>
+                        <a href="https://www.facebook.com/pg/bitcoindayLA/photos/?tab=album&album_id=678439042347416" target="_blank" class="link-tickets">Gallery</a></p>
+                      </li>
+                      <li class="past-item">
+                          <div class="dot"></div>
+                          <p class="date">May 2017</p>
+                          <h5 class="location">Mendoza, Arg.</h5>
+                          <a href="https://www.facebook.com/pg/bitcoindayLA/photos/?tab=album&album_id=733961213461865" target="_blank" class="link-tickets">Gallery</a></p>
+                        </li>
+                  </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+  </section>
   <!--team-->
   <section class="bg-faded" id="speakers">
     <div class="container">
@@ -144,13 +181,13 @@
           <h5>Diego Gutierrez Saldivar</h5>
           <p class="heading-semi-bold text-muted">CEO de RSK</p>
           <p>
-            <a href="https://www.facebook.com/dieguito9000" class="mr-3">
+            <a href="https://www.facebook.com/dieguito9000" target="_blank" class="mr-3 icon-profile">
               <em class="fa fa-facebook"></em>
             </a>
-            <a href="https://twitter.com/dieguito?lang=es" class="mr-3">
+            <a href="https://twitter.com/dieguito" target="_blank" class="mr-3 icon-profile">
               <em class="fa fa-twitter"></em>
             </a>
-            <a href="https://www.instagram.com/dieguito9000/">
+            <a href="https://www.instagram.com/dieguito9000/" target="_blank" class="icon-profile">
               <em class="fa fa-instagram"></em>
             </a>
           </p>
@@ -162,13 +199,13 @@
           <h5>Manuel Beaudroit</h5>
           <p class="heading-semi-bold text-muted">Chief Marketing Officer en Bitex.la</p>
           <p>
-            <a href="https://www.facebook.com/manuel.beaudroit" class="mr-3">
+            <a href="https://www.facebook.com/manuel.beaudroit" target="_blank" class="mr-3 icon-profile">
               <em class="fa fa-facebook"></em>
             </a>
-            <a href="https://twitter.com/mbeaudroit?lang=es" class="mr-3">
+            <a href="https://twitter.com/mbeaudroi" target="_blank" class="mr-3 icon-profile">
               <em class="fa fa-twitter"></em>
             </a>
-            <a href="https://www.instagram.com/manuelbeaudroit/">
+            <a href="https://www.instagram.com/manuelbeaudroit/" target="_blank" class="icon-profile">
               <em class="fa fa-instagram"></em>
             </a>
           </p>
@@ -181,13 +218,13 @@
           <p class="heading-semi-bold text-muted">Fundador de la ONG Bitcoin Argentina</p>
 
           <p>
-            <a href="#" class="mr-3 icon-profile">
+            <a href="#" target="_blank" class="mr-3 icon-profile">
               <em class="fa fa-facebook"></em>
             </a>
-            <a href="https://twitter.com/guilletorrealba?lang=es" class="mr-3">
+            <a href="https://twitter.com/guilletorrealba?lang=es" target="_blank" class="mr-3 icon-profile">
               <em class="fa fa-twitter"></em>
             </a>
-            <a href="#" class="icon-profile">
+            <a href="#" target="_blank" class="icon-profile">
               <em class="fa fa-instagram"></em>
             </a>
           </p>
@@ -200,13 +237,13 @@
           <p class="heading-semi-bold text-muted">Fundador & CEO de Buda.com</p>
 
           <p>
-            <a href="#" class="mr-3 icon-profile">
+            <a href="#" target="_blank" class="mr-3 icon-profile">
               <em class="fa fa-facebook"></em>
             </a>
-            <a href="https://twitter.com/garavagliajuan?lang=es" class="mr-3">
+            <a href="https://twitter.com/garavagliajuan" target="_blank" class="mr-3 icon-profile">
               <em class="fa fa-twitter"></em>
             </a>
-            <a href="#" class="icon-profile">
+            <a href="#" target="_blank" class="icon-profile">
               <em class="fa fa-instagram"></em>
             </a>
           </p>
@@ -219,13 +256,13 @@
           <p class="heading-semi-bold text-muted">Founder Bitprim Bitcoin Cash core developer</p>
 
           <p>
-            <a href="#" class="mr-3 icon-profile">
+            <a href="#" target="_blank" class="mr-3 icon-profile">
               <em class="fa fa-facebook"></em>
             </a>
-            <a href="#" class="mr-3 icon-profile">
+            <a href="#" target="_blank" class="mr-3 icon-profile">
               <em class="fa fa-twitter"></em>
             </a>
-            <a href="#" class="icon-profile">
+            <a href="#" target="_blank" class="icon-profile">
               <em class="fa fa-instagram"></em>
             </a>
           </p>
@@ -238,13 +275,13 @@
           <p class="heading-semi-bold text-muted">Head of Xapo Treasury</p>
 
           <p>
-            <a href="https://www.facebook.com/carlos.maslaton.1" class="mr-3">
+            <a href="https://www.facebook.com/carlos.maslaton.1" target="_blank" class="mr-3 icon-profile">
               <em class="fa fa-facebook"></em>
             </a>
-            <a href="https://twitter.com/carlosmaslaton?lang=es" class="mr-3">
+            <a href="https://twitter.com/carlosmaslaton" target="_blank" class="mr-3 icon-profile">
               <em class="fa fa-twitter"></em>
             </a>
-            <a href="https://www.instagram.com/carlosmaslaton/?hl=es-la">
+            <a href="https://www.instagram.com/carlosmaslaton" target="_blank" class="icon-profile">
               <em class="fa fa-instagram"></em>
             </a>
           </p>
@@ -257,13 +294,13 @@
           <p class="heading-semi-bold text-muted">CEO de Signatura</p>
 
           <p>
-            <a href="https://www.facebook.com/gonzalo.blousson" class="mr-3">
+            <a href="https://www.facebook.com/gonzalo.blousson" target="_blank" class="mr-3 icon-profile">
               <em class="fa fa-facebook"></em>
             </a>
-            <a href="https://twitter.com/gonblousson?lang=es" class="mr-3">
+            <a href="https://twitter.com/gonblousson" target="_blank" class="mr-3 icon-profile">
               <em class="fa fa-twitter"></em>
             </a>
-            <a href="#" class="icon-profile">
+            <a href="#" target="_blank" class="icon-profile">
               <em class="fa fa-instagram"></em>
             </a>
           </p>
@@ -276,10 +313,10 @@
           <p class="heading-semi-bold text-muted">Business Development at Consensys</p>
 
           <p>
-            <a href="https://www.facebook.com/joaquinmoreno?ref=br_rs" class="mr-3">
+            <a href="https://www.facebook.com/joaquinmoreno?ref=br_rs" class="mr-3 icon-profile">
               <em class="fa fa-facebook"></em>
             </a>
-            <a href="https://twitter.com/joaquinmoreno" class="mr-3">
+            <a href="https://twitter.com/joaquinmoreno" class="mr-3 icon-profile">
               <em class="fa fa-twitter"></em>
             </a>
             <a href="#" class="icon-profile">
@@ -290,6 +327,7 @@
       </div>
     </div>
   </section>
+  <!--sponsors-->
   <section class="bg-alt" id="sponsors">
     <div class="container">
       <div class="row">
@@ -317,7 +355,7 @@
     </div>
   </section>
   <!--team-->
-  <section class="bg-alt" id="contact">
+  <section id="contact">
     <div class="container">
       <div class="row">
         <div class="col-md-8 offset-md-2">
@@ -351,11 +389,11 @@
             </div>
             <div class="form-group mt-4">
               <div class="input">
-                <textarea id="form_message" name="message" class="form-control" placeholder="What's in your mind?" rows="5"></textarea>
+                <textarea id="form_message" name="message" class="form-control" placeholder="What's in your mind?" rows="1"></textarea>
               </div>
             </div>
-            <div class="form-group mt-4 text-center">
-              <input type="submit" class="btn btn-primary btn-submit" value="Send Message" />
+            <div class="form-group mt-4 d-flex justify-content-end">
+              <input type="submit" class="btn btn-md btn-outline-grey btn-submit" value="Send Message" />
             </div>
           </div>
         </form>
@@ -367,10 +405,13 @@
   <section class="footer colored-section bg-inverse footer pt-5">
     <div class="container">
       <div class="row">
-        <div class="col-sm-6">
+        <div class="col-sm-6 d-flex justify-content-center justify-content-sm-start align-items-center pb-2 pt-2">
           <img src="./img/logo_w.png" class="footer-logo" />
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-6 d-flex justify-content-center justify-content-sm-end align-items-center pb-2 pt-2">
+          <a href="https://www.facebook.com/bitcoindayLA/" class="icon-footer" target="_blank"><em class="fa fa-facebook"></em></a>
+          <a href="https://www.instagram.com/bitcoindayLA/" class="icon-footer" target="_blank"><em class="fa fa-instagram"></em></a>
+          <a href="https://www.twitter.com/bitcoindayLA/" class="icon-footer" target="_blank"><em class="fa fa-twitter"></em></a>
         </div>
       </div>
     </div>
